@@ -10,6 +10,8 @@ const getConnectionPool = (dbConnectionString) => {
     return new Pool(config);
 }
 
+
+
 const executeQuery = async (query, dbConnectionString) => {
     let client;
     try {
