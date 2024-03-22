@@ -1,0 +1,311 @@
+{
+    "success": true,
+    "code": 200,
+    "msg": null,
+    "data": {
+        "product": {
+            "key": "c7fa40d3bc9b50ccee27c8a95a9d589c",
+            "porDTO": {
+                "code": "CNSHA",
+                "name": "SHANGHAI",
+                "pier": "SHANGHAI SHENGDONG INTL CNTR TMNL - (YANGSHAN)",
+                "etd": 1699761600000,
+                "eta": 1702389600000
+            },
+            "polDTO": {
+                "code": "CNSHA",
+                "name": "SHANGHAI",
+                "pier": "",
+                "etd": 1699761600000,
+                "eta": null
+            },
+            "podDTO": {
+                "code": "NLRTM",
+                "name": "ROTTERDAM",
+                "pier": "",
+                "etd": null,
+                "eta": 1702389600000
+            },
+            "pdlDTO": {
+                "code": "NLRTM",
+                "name": "ROTTERDAM",
+                "pier": "EUROMAX TERMINAL ROTTERDAM BV",
+                "etd": 1699761600000,
+                "eta": 1702389600000
+            },
+            "carrierDTO": {
+                "carrierId": 4558,
+                "carrierName": "东方海外",
+                "carrierEnName": "OOCL",
+                "carrierCode": "OOCL",
+                "carrierLogoUrl": "https://geekfiles.oss-cn-shanghai.aliyuncs.com/mdm/7c8aeb491a964cb6a3232d3757393d80.png"
+            },
+            "routeCode": "LL2",
+            "containerType": "40HC",
+            "vesselName": "COSCO SHIPPING VIRGO",
+            "voyage": "026W",
+            "etd": 1699761600000,
+            "eta": 1702389600000,
+            "fromServiceMode": "CY",
+            "toServiceMode": "CY",
+            "viaWayList": [
+                {
+                    "serviceCode": "LL2",
+                    "vesselName": "COSCO SHIPPING VIRGO",
+                    "voyageCode": "026W",
+                    "etd": 1699761600000,
+                    "eta": null,
+                    "polName": "SHANGHAI",
+                    "podName": null,
+                    "polTerminal": "SHANGHAI SHENGDONG INTL CNTR TMNL - (YANGSHAN)",
+                    "podTerminal": null
+                },
+                {
+                    "serviceCode": null,
+                    "vesselName": null,
+                    "voyageCode": null,
+                    "etd": null,
+                    "eta": 1702389600000,
+                    "polName": "ROTTERDAM",
+                    "podName": null,
+                    "polTerminal": "EUROMAX TERMINAL ROTTERDAM BV",
+                    "podTerminal": null
+                }
+            ],
+            "isVia": 0,
+            "transportDay": 30,
+            "productStatus": 3,
+            "priceAmountSpot": 1250.0,
+            "priceAmountQq": 0.0,
+            "priceFullAmount": 1250.0,
+            "currency": "USD",
+            "updatedDate": 1699276120352
+        },
+        "surcharges": [
+            {
+                "productId": null,
+                "priceCategory": "Freight",
+                "priceType": "detail",
+                "priceName": "Basic Ocean Freight",
+                "priceAmount": 1250.0,
+                "currency": "USD",
+                "amountUsd": 1250.0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 1,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Freight",
+                "priceType": "detail",
+                "priceName": "CAF - Currency Adjustment Factor",
+                "priceAmount": 0.0,
+                "currency": "USD",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 1,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Freight",
+                "priceType": "detail",
+                "priceName": "LSA - Low Sulphur Adjustment",
+                "priceAmount": 0.0,
+                "currency": "USD",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 1,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Freight",
+                "priceType": "detail",
+                "priceName": "PSS - Peak Season Surcharge",
+                "priceAmount": 0.0,
+                "currency": "USD",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 1,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "DOC - Outbound Documentation Fee",
+                "priceAmount": 450.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "BL",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "EIR - Equipment Interchange Receipt (For PRC)",
+                "priceAmount": 20.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "FHF - Freight Handling Fee",
+                "priceAmount": 0.0,
+                "currency": "USD",
+                "amountUsd": 0,
+                "chargeUnit": "BL",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "HCF - Harbor Miscellaneous Fee",
+                "priceAmount": 178.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "HSS - High Security Seal Charge",
+                "priceAmount": 30.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "PEF - Payable Elsewhere Fee",
+                "priceAmount": 0.0,
+                "currency": "USD",
+                "amountUsd": 0,
+                "chargeUnit": "BL",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "THC - Terminal Handling Charge at Origin",
+                "priceAmount": 1014.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Origin",
+                "priceType": "detail",
+                "priceName": "TSO - Terminal Security Fee at Origin",
+                "priceAmount": 12.0,
+                "currency": "CNY",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 2,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Destination",
+                "priceType": "detail",
+                "priceName": "DCF - Inbound Documentation Fee",
+                "priceAmount": 45.0,
+                "currency": "EUR",
+                "amountUsd": 0,
+                "chargeUnit": "BL",
+                "rateTypeCode": 3,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Destination",
+                "priceType": "detail",
+                "priceName": "THD - Terminal Handling Charge at Destination",
+                "priceAmount": 240.0,
+                "currency": "EUR",
+                "amountUsd": 0,
+                "chargeUnit": "CNTR",
+                "rateTypeCode": 3,
+                "additionalNotes": null
+            },
+            {
+                "productId": null,
+                "priceCategory": "Others",
+                "priceType": "detail",
+                "priceName": "AMS - Advance Manifest Security Charge",
+                "priceAmount": 30.0,
+                "currency": "USD",
+                "amountUsd": 30.0,
+                "chargeUnit": "BL",
+                "rateTypeCode": 4,
+                "additionalNotes": null
+            }
+        ],
+        "spotFees": [
+            {
+                "chargeType": null,
+                "chargeTypeDesc": "Quick Quotes Spot Fees",
+                "chargeName": "取消费 Cancellation Fee",
+                "chargeUnit": null,
+                "containerType": "40HC",
+                "price": "24小时免退关费 ETD=21 收取 20% ETD (7~21) 收取50%退关费 ETD(0~7) 100%退关费\n金梅花、银梅花 退关费打8折，退关费金额和航线、折扣商品有关，美国线只有24H的全免规则，没有折扣",
+                "currency": "CNY",
+                "surchargeType": null
+            }
+        ],
+        "dndFees": [
+            {
+                "direction": 1,
+                "chargeType": 3,
+                "commodity": "Dry Cargo",
+                "displayName": "Import DEM+DET",
+                "freetimeStartEvent": "DISCHARGE",
+                "detailList": [
+                    {
+                        "startDay": 1,
+                        "endDay": 11,
+                        "chargeMap": null,
+                        "currency": "EUR",
+                        "chargePerDiem": 0
+                    },
+                    {
+                        "startDay": 12,
+                        "endDay": 17,
+                        "chargeMap": null,
+                        "currency": "EUR",
+                        "chargePerDiem": 65
+                    },
+                    {
+                        "startDay": 18,
+                        "endDay": null,
+                        "chargeMap": null,
+                        "currency": "EUR",
+                        "chargePerDiem": 95
+                    }
+                ]
+            }
+        ]
+    }
+}

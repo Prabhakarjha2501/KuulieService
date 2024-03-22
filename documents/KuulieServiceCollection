@@ -1,0 +1,1940 @@
+{
+	"info": {
+		"_postman_id": "fbe0dcdb-f99a-4935-9b14-faffe06a1781",
+		"name": "Kuulie_Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "auth_user_id",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "dhole",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aniketdhole51291@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "liscense_type",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "created_by_id",
+							"value": "superadmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "auth_user_id",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "dhole",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aniketdhole51291@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "liscense_type",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "created_by_id",
+							"value": "superadmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/createUserFromAdmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"createUserFromAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "3ac7e0ce-2cd9-11ec-9c4c-7f5f2ee4e569",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "dhole",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aniketdhole51291@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "updated_by_id",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/updateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "4bc86592-2cd9-11ec-9f1f-2f5c214aad54",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getUserById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getUserById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getAllUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getAllUser"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "aniket",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "dhole",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users By ClientId, AuthUserIds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YjAzMzI1YmJhOGI1M2VlNTYzNzUwIiwicm9sZSI6IlNVUEVSQURNSU4iLCJjbGllbnQiOnsiaWQiOiI2MTViMDI3MzViYmE4YjUzZWU1NjM3NGIiLCJkb21haW4iOiJodHRwczovL2t1dWxpZS1hZG1pbi1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20ifX0sImlhdCI6MTYzNDM1ODU3NSwiZXhwIjoxNjM0Mzc2NTc1LCJhdWQiOiJodHRwczovL2t1dWxpZS1hZG1pbi1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.XJTc5mbthsok-GbVOmwS8rJH6qG2B7-apW6h2T0QNEU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/by-client-auth-userids",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"by-client-auth-userids"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "aniket",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "dhole",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Permission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "AgentPermission",
+							"type": "text"
+						},
+						{
+							"key": "created_by_id",
+							"value": "superadmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/createPermission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"createPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Permission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "permission_id",
+							"value": "031415b8-2ce2-11ec-adfd-570cd4fa3e8f",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "BaseUserPermission",
+							"type": "text"
+						},
+						{
+							"key": "updated_by_id",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/updatePermission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"updatePermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Permissions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE2ODRjZTYwNjVkODM0NWJkMDBiODk1Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE2ODRjYmYwNjVkODM0NWJkMDBiODg2IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwIn19LCJpYXQiOjE2MzQ5MTE3NzAsImV4cCI6MTYzNDkyOTc3MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.HQL9_mVn2JLQn5zugnM9HrSYMnxLRhT5AxuoWFzwq-I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getAllPermissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getAllPermissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Agent",
+							"type": "text"
+						},
+						{
+							"key": "permission_id",
+							"value": "a2fc2534-2cec-11ec-9eda-dffe785381e0",
+							"type": "text"
+						},
+						{
+							"key": "created_by_id",
+							"value": "superuser",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/createRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"createRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "role_id",
+							"value": "d5a90d3a-2cec-11ec-aeef-8788421a99cc",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Agent",
+							"type": "text"
+						},
+						{
+							"key": "permission_id",
+							"value": "aeacdeaa-2cec-11ec-9eda-7fb100575999",
+							"type": "text"
+						},
+						{
+							"key": "updated_by_id",
+							"value": "aniket",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/updateRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"updateRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getAllRoles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getAllRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User Roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "4bc86592-2cd9-11ec-9f1f-2f5c214aad54",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "cccf5174-2cec-11ec-aeef-bf98649130aa, d1021bf0-2cec-11ec-aeef-23a4671cd76a",
+							"type": "text"
+						},
+						{
+							"key": "permission_id",
+							"value": "a8aa085c-2cec-11ec-9eda-b358efd407d8, aeacdeaa-2cec-11ec-9eda-7fb100575999",
+							"type": "text"
+						},
+						{
+							"key": "created_by_id",
+							"value": "superuser",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/addUserRoles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"addUserRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "4bc86592-2cd9-11ec-9f1f-2f5c214aad54",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "cccf5174-2cec-11ec-aeef-bf98649130aa",
+							"type": "text"
+						},
+						{
+							"key": "permission_id",
+							"value": "a8aa085c-2cec-11ec-9eda-b358efd407d8",
+							"type": "text"
+						},
+						{
+							"key": "updated_by_id",
+							"value": "aniket",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/updateUserRoles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"updateUserRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Roles By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "4bc86592-2cd9-11ec-9f1f-2f5c214aad54",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getUserRolesById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getUserRolesById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Roles With Permission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "permission_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/v1/addRolesWithPermission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"addRolesWithPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Roles With Permission",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/v1/updateRolesWithPermission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"updateRolesWithPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Roles With Permission By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/v1/getRolesWithPermissionById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"v1",
+						"getRolesWithPermissionById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Quotation Rates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzUzMjY2NjYsImV4cCI6MTYzNTM0NDY2NiwiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.ZwO81jExWDx9J3QKt7FLtPqQRQtNVacbGtSEwh7C98M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origin\": \"Shanghai, CN, CNSHA\",\r\n    \"destination\": \"Barcelona, ES, ESBCN\",\r\n    \"contractType\": \"FAK/GDSM\",\r\n    \"cargoReadyDate\": \"09/09/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/quotation/search/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"quotation",
+						"search",
+						"rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add My Quotation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzY1NTQyOTIsImV4cCI6MTYzNjU3MjI5MiwiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.1MXP_6P7Cty-XgL3rVNnQuQeq_JG1huRnPK7wUnhQvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669,\r\n    \"customerId\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update My Quotation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzUzMjY2NjYsImV4cCI6MTYzNTM0NDY2NiwiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.ZwO81jExWDx9J3QKt7FLtPqQRQtNVacbGtSEwh7C98M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"state\": \"ACCEPTED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download MyQuotation PDF",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE4YWFmMDBlNjI5Y2MxZjJhYmMxMmQ0Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE2ODRjYmYwNjVkODM0NWJkMDBiODg2IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwIn19LCJpYXQiOjE2Mzc1MTE3NDYsImV4cCI6MTYzNzUyOTc0NiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.dhN5WVka05E9lrpwCEPA2fcLj0cNbBrC4UrO6eAcs30",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669,\r\n    \"customerId\": 16,\r\n    \"cargoReadyDate\": \"11/21/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/download/pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"download",
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share My Quotation via WhatsApp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzY2MzMyMjQsImV4cCI6MTYzNjY1MTIyNCwiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.DQbS7KtnPVJYvqQzbBMe177Ay6ZGQP3cJGyrBk_IOuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669,\r\n    \"customerId\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/share/whatsapp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"share",
+						"whatsapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Share My Quotation via Mail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzY2MzMyMjQsImV4cCI6MTYzNjY1MTIyNCwiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.DQbS7KtnPVJYvqQzbBMe177Ay6ZGQP3cJGyrBk_IOuE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669,\r\n    \"customerId\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/share/mail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"share",
+						"mail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All My Quotations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ0NDk1MTczLCJleHAiOjE2NDQ1MTMxNzMsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.HXqFShHkRc5tzi8Eo-0ti2TMQ9vDkXfql6LX1N2niaI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All My Quotations Created By Current User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE3NDIxZDkxNDBhZjViYzViMzlkN2ZmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE3NDFkMjhlMjQ0NGRlZDgxZDhjYmE3IiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIn19LCJpYXQiOjE2MzYwMTM4ODcsImV4cCI6MTYzNjAzMTg4NywiYXVkIjoiaHR0cHM6Ly9rdXVsaWUtcG9ydGFsLWRldi5oZXJva3VhcHAuY29tIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.FXPeYX_sdnXCB2WgPVE_5ooZzoIFQxQnA9KT7LSPUWE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/by-current-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"by-current-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contract Numbers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDA1MjMxNjIsImV4cCI6MTY0MDU0MTE2MiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.pBvC_Y45nVyH3cSnRdl-aF8LNwbPJFxly33r4eHPN10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/contract/numbers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"contract",
+						"numbers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Allocations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQyMDcwNTU4LCJleHAiOjE2NDIwODg1NTgsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.mRJt47nShfasFliBjswhFnHd0F_7L-Bl785OsupUljo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zilur/OneDrive/Documents/Kuulie/ALLOCATIONS_IMPORT_TEMPLATE.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/capacity-planning/allocation/import/excel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"capacity-planning",
+						"allocation",
+						"import",
+						"excel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Quotations Count Week Wise",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ0NDk1MTczLCJleHAiOjE2NDQ1MTMxNzMsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.HXqFShHkRc5tzi8Eo-0ti2TMQ9vDkXfql6LX1N2niaI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/analytics/month-wise",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"analytics",
+						"month-wise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Quotations Summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ0NDk1MTczLCJleHAiOjE2NDQ1MTMxNzMsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.HXqFShHkRc5tzi8Eo-0ti2TMQ9vDkXfql6LX1N2niaI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/analytics/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"analytics",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get My Quotations Max Port Summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ0NjQwNzQyLCJleHAiOjE2NDQ2NTg3NDIsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.dTscvLnRtLDn4crXCiDgHhZXvt1Sq_XRpPlMAJC_oZY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/dashboard/my-quotations/analytics/max-port-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"dashboard",
+						"my-quotations",
+						"analytics",
+						"max-port-summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Document",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDUwOTYxODksImV4cCI6MTY0NTExNDE4OSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.y_-ICD0-PxvMSmhLxgCpObJk3J6hFARsJZdYMkewY5M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zilur/OneDrive/Documents/Kuulie/quote.docx"
+						},
+						{
+							"key": "documentType",
+							"value": "ZTEST",
+							"type": "text"
+						},
+						{
+							"key": "documentName",
+							"value": "ILU",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ1NTM1MjcxLCJleHAiOjE2NDU1NTMyNzEsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.9MzdnMHIFLECDDbyLzQ36EQevcYfWJTIaVxUemJLVNI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Notification List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ1NjE3MTk4LCJleHAiOjE2NDU2MzUxOTgsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.R3MauLTUWHsxuSOhj37LjJZdM2mV-GYOlDX5_v3E1Qg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/notifications?pageSize=5&pageNumber=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Quotation Rate Excel From Zoho",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE4MGMxNGZkNDQzM2FiODk0ZDgxNDA2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE4MGMxMTZkNDQzM2FiODk0ZDgxM2YzIiwiZG9tYWluIjoiaHR0cHM6Ly9kZW1vLmt1dWxpZS5jb20ifX0sImlhdCI6MTY0NjQ4MzI3OSwiZXhwIjoxNjQ2NTEzMjc5LCJhdWQiOiJodHRwczovL2RlbW8ua3V1bGllLmNvbSIsImlzcyI6Imh0dHNwOi8vYXV0aC5rdXVsaWUuY29tIn0.7w7BFsG3LymxoCIJL2P1tSNRG2evqjAifJDowVC-OXU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quotationRateOutputId\": 669\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/zoho/quotation-rates/import/excel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"zoho",
+						"quotation-rates",
+						"import",
+						"excel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plan Vs Actual Summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDgyOTc0NzAsImV4cCI6MTY0ODMxNTQ3MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.K9RJsswfF_3Y3FqzKgCq6PRKmmJ5tmG-Hiqk_xFoHoY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zilur/OneDrive/Documents/Kuulie/ALLOCATIONS_IMPORT_TEMPLATE.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/capacity-planning/allocation/analytics/plan-vs-actual-summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"capacity-planning",
+						"allocation",
+						"analytics",
+						"plan-vs-actual-summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plan Vs Actual",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDgyOTc0NzAsImV4cCI6MTY0ODMxNTQ3MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.K9RJsswfF_3Y3FqzKgCq6PRKmmJ5tmG-Hiqk_xFoHoY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zilur/OneDrive/Documents/Kuulie/ALLOCATIONS_IMPORT_TEMPLATE.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/capacity-planning/allocation/analytics/plan-vs-actual",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"capacity-planning",
+						"allocation",
+						"analytics",
+						"plan-vs-actual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Vessel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDg1NTUwNTAsImV4cCI6MTY0ODU3MzA1MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.lIXURTONdAtYl8qd9MStRcjB7z9uF_qGWoLQMYGZ2gw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test Me 123",
+							"type": "text"
+						},
+						{
+							"key": "active",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/zilur/OneDrive/Pictures/PXL_20220313_144404044-01.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/vessels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vessels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vessel List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDg1NTUwNTAsImV4cCI6MTY0ODU3MzA1MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.lIXURTONdAtYl8qd9MStRcjB7z9uF_qGWoLQMYGZ2gw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vessels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vessels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vessel By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDg1NTUwNTAsImV4cCI6MTY0ODU3MzA1MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.lIXURTONdAtYl8qd9MStRcjB7z9uF_qGWoLQMYGZ2gw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vessels/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vessels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vessel By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGQ5MTkxZTk2OWUwNGQ0NzA5OTg4Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGQ5MDAxZTk2OWUwNGQ0NzA5OTU3IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIn19LCJpYXQiOjE2NDg1NTUwNTAsImV4cCI6MTY0ODU3MzA1MCwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.lIXURTONdAtYl8qd9MStRcjB7z9uF_qGWoLQMYGZ2gw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test 111\",\r\n    \"active\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/vessels/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vessels",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Voyage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ4NzIwNjMyLCJleHAiOjE2NDg3Mzg2MzIsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.fpTtXTg8_l7qAuhbhd8ouR4UDd73yiW15POw-o3k0g8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vesselId\": 5,\r\n    \"portOfLoading\": \"P1\",\r\n    \"portOfDestination\": \"P2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/voyages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"voyages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Voyage List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ4NzIwNjMyLCJleHAiOjE2NDg3Mzg2MzIsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.fpTtXTg8_l7qAuhbhd8ouR4UDd73yiW15POw-o3k0g8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/voyages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"voyages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Voyage By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ4NzIwNjMyLCJleHAiOjE2NDg3Mzg2MzIsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.fpTtXTg8_l7qAuhbhd8ouR4UDd73yiW15POw-o3k0g8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/voyages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"voyages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Voyage By Vessel Id Origin Destination",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFhNGU5NTA5ZGFiZjAyY2JhOTU2ZDY2Iiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjFhNGU5MjA5ZGFiZjAyY2JhOTU2Y2ZkIiwiZG9tYWluIjoiaHR0cHM6Ly9rdXVsaWUtY2xpZW50LXBvcnRhbC1kZXYuaGVyb2t1YXBwLmNvbSJ9fSwiaWF0IjoxNjQ4NzIwNjMyLCJleHAiOjE2NDg3Mzg2MzIsImF1ZCI6Imh0dHBzOi8va3V1bGllLWNsaWVudC1wb3J0YWwtZGV2Lmhlcm9rdWFwcC5jb20iLCJpc3MiOiJrdXVsaWUtYXV0aC1zZXJ2aWNlLWRldiJ9.fpTtXTg8_l7qAuhbhd8ouR4UDd73yiW15POw-o3k0g8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/voyages/5/P1/P2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"voyages",
+						"5",
+						"P1",
+						"P2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE2OTRmMTYzY2VmOTFhYzA0MWFkMjNmIiwicm9sZSI6IkFETUlOIiwiY2xpZW50Ijp7ImlkIjoiNjE2ODRjYmYwNjVkODM0NWJkMDBiODg2IiwiZG9tYWluIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2NhbGxiYWNrIn19LCJpYXQiOjE2MzQzMDM4NDEsImV4cCI6MTYzNDMyMTg0MSwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2NhbGxiYWNrIiwiaXNzIjoia3V1bGllLWF1dGgtc2VydmljZS1kZXYifQ.EkPU9FmlRG7DwulqaMxnKpi7e8j8LZnEhdGH7z-vaKU",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

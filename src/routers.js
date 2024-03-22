@@ -1,0 +1,37 @@
+const express = require('express');
+const { basePath, allowcationBasePath, dashboardBasePath, customerbaseUrl, capacityPlanningBasePath, scheduleBasePath, documentsBasePath, notificationBasePath, zohoFilePath, zohoBasePath, trackAndTraceBasePath, invoicesBasePath, vesselsBasePath, voyagesBasePath, bookingsBasePath, currencyBasePath, OnlineUsersBasePath, onlineUsersBasePath } = require('./utils/urlConstant');
+const user = require('./module/user/user.route');
+const allocation = require('./module/allocation/allocation.route');
+const dashboard = require('./module/dashboard/dashboard.route');
+const customer = require('./module/customer/customer.route');
+const capacityPlanningRouter = require('./module/capacity-planning/capacity-planning.route');
+const scheduleRouter = require('./module/schedule/schedule.route');
+const documentRouter = require('./module/document/document.route');
+const notificationsRouter = require('./module/notifications/notifications.route');
+const zohoRouter = require('./module/zoho/zoho.route');
+const trackAndTraceRouter = require('./module/track-and-trace/trackAndTrace.route');
+const invoicesRouter = require('./module/invoices/invoices.route');
+const vesselsRouter = require('./module/vessels/vessels.route');
+const voyagesRouter = require('./module/voyages/voyages.route');
+const bookingsRouter = require('./module/bookings/bookings.route');
+const currencyRouter = require('./module/currency/currency.route');
+const onlineUsers =require('./module/insights/insights.route')
+const router = express.Router();
+router.use(basePath, user);
+router.use(allowcationBasePath, allocation);
+router.use(dashboardBasePath, dashboard);
+router.use(customerbaseUrl, customer);
+router.use(capacityPlanningBasePath, capacityPlanningRouter);
+router.use(scheduleBasePath, scheduleRouter);
+router.use(documentsBasePath, documentRouter);
+router.use(notificationBasePath, notificationsRouter);
+router.use(zohoBasePath, zohoRouter);
+router.use(trackAndTraceBasePath, trackAndTraceRouter);
+router.use(invoicesBasePath, invoicesRouter);
+router.use(vesselsBasePath, vesselsRouter);
+router.use(voyagesBasePath, voyagesRouter);
+router.use(bookingsBasePath, bookingsRouter);
+router.use(currencyBasePath, currencyRouter);
+router.use(onlineUsersBasePath,onlineUsers);
+
+module.exports = router;

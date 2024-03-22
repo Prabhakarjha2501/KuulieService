@@ -1,0 +1,10 @@
+coverage/
+node_modules/
+.vscode/
+output
+dist
+.history/
+logs/
+package-lock.json
+
+.env

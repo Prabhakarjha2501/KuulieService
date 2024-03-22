@@ -1,0 +1,22 @@
+{
+    "carrierCodeList": [],
+    "containerType": "40HC",
+    "etd": [],
+    "fromServiceMode": "CY",
+    "podCode": "NLRTM",
+    "polCode": "CNSHA",
+    "page": 1,
+    "size": 20,
+    "sort": [
+        {
+            "direction": "ASC",
+            "property": "productStatus"
+        },
+        {
+            "direction": "ASC",
+            "property": "etd"
+        }
+    ],
+    "toServiceMode": "CY",
+    "uid": "402883"
+}
